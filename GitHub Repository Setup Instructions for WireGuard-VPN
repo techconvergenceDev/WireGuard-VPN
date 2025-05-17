@@ -1,0 +1,96 @@
+GitHub Repository Setup Instructions for WireGuard-VPN
+Repository Setup
+
+Clone your repository:
+bashgit clone https://github.com/techconvergenceDev/WireGuard-VPN.git
+cd WireGuard-VPN
+
+Add the main script file:
+
+Save the PowerShell script we created as wireguard-setup.ps1 in the repository root
+
+
+Create the directory structure:
+bashmkdir -p docs
+mkdir -p images
+
+Add the documentation files:
+
+Save the README.md file to the repository root
+Save the LICENSE file to the repository root
+Save the .gitignore file to the repository root
+Save TROUBLESHOOTING.md to the docs directory
+Save ADVANCED.md to the docs directory
+
+
+Commit and push all changes:
+bashgit add .
+git commit -m "Initial commit: WireGuard VPN Setup with QR Code Generator"
+git push origin main
+
+
+Command Summary
+Here's a complete set of commands to set up your repository:
+bash# Clone the repository
+git clone https://github.com/techconvergenceDev/WireGuard-VPN.git
+cd WireGuard-VPN
+
+# Create directories
+mkdir -p docs
+mkdir -p images
+
+# Copy files (you'll need to create these files first)
+# - wireguard-setup.ps1
+# - README.md
+# - LICENSE
+# - .gitignore
+# - docs/TROUBLESHOOTING.md
+# - docs/ADVANCED.md
+
+# Add all files to git
+git add .
+
+# Commit changes
+git commit -m "Initial commit: WireGuard VPN Setup with QR Code Generator"
+
+# Push to GitHub
+git push origin main
+Repository Settings
+After pushing your files, configure these repository settings on GitHub:
+
+About Section:
+
+Add a description: "Automated WireGuard VPN setup script with QR code generation for Windows"
+Add topics: wireguard, vpn, powershell, windows-server, qr-code, networking, security
+
+
+Social Preview:
+
+Go to Settings > Social Preview
+Upload a custom image that shows the WireGuard logo and your project name
+
+
+GitHub Pages (optional):
+
+Go to Settings > Pages
+Source: Deploy from a branch
+Branch: main
+Folder: /docs
+This will create a documentation website at https://techconvergencedev.github.io/WireGuard-VPN/
+
+
+Branch Protection (optional):
+
+Go to Settings > Branches
+Add rule for main branch
+Require pull request reviews before merging
+This prevents accidental commits directly to main
+
+
+Releases:
+
+Create an initial release v1.0.0
+Upload the script as an asset
+Add release notes based on the README features
+
+
