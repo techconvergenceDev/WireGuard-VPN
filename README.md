@@ -1,39 +1,38 @@
 WireGuard VPN Setup with QR Code Generator
-
-A PowerShell script that automatically sets up a WireGuard VPN server on Windows and generates a scannable QR code for easy mobile device connection.
+Show Image
+A collection of scripts that automatically set up a WireGuard VPN server and generate scannable QR codes for easy mobile device connection. Available for both Windows and Ubuntu platforms.
 Features
 
-One-Click Server Setup: Fully automated WireGuard VPN server setup on Windows
-Auto QR Code Generation: Creates a scannable QR code directly in your browser
+One-Click Server Setup: Fully automated WireGuard VPN server installation and configuration
+Auto QR Code Generation: Creates scannable QR codes directly in your browser or terminal
 Mobile-Ready: Instantly connect Android or iOS devices by scanning the QR code
 Secure Configuration: Properly configured with best-practice security settings
 Zero External Dependencies: No reliance on third-party websites for QR code generation
-User-Friendly: Simple and guided setup process with clear instructions
+Multi-Platform Support: Works on Windows 10/11, Windows Server, and Ubuntu Server
 
-Requirements
+Platform Support
+Windows
+The wireguard-setup.ps1 script provides automated setup for Windows 10/11 and Windows Server environments.
+Requirements:
 
-Windows 10/11 or Windows Server 2016/2019/2022/2025
-PowerShell 5.1 or newer (pre-installed on modern Windows systems)
+Windows 10/11 or Windows Server 2016/2019/2022
+PowerShell 5.1 or newer
 Administrator privileges
 Internet connection for downloading WireGuard (if not already installed)
-Port 51820/UDP accessible (configure firewall/router as needed)
+Port 51820/UDP accessible
 
-Use Cases
-1. Secure Remote Access to Home Network
-Set up a secure connection to your home network to access files, devices, and services while traveling.
-2. Business VPN for Remote Workers
-Provide employees with secure access to company resources without complex enterprise VPN solutions.
-3. Bypass Geographic Restrictions
-Access content and services that might be restricted in your current location by routing through your server.
-4. Network Security on Public Wi-Fi
-Encrypt your traffic when using public Wi-Fi networks to protect your data from eavesdropping.
-5. IoT Device Management
-Create a secure network for managing IoT devices remotely with encrypted communications.
-6. Gaming with Friends
-Establish a secure private network for gaming with friends, simulating a LAN environment.
-7. Media Server Access
-Securely access your Plex, Jellyfin, or other media servers from anywhere.
-Installation
+See Windows Setup Instructions
+Ubuntu
+The wireguard-ubuntu-setup.sh script provides automated setup for Ubuntu Server environments.
+Requirements:
+
+Ubuntu Server 18.04 or newer
+Root privileges (sudo)
+Internet connection for installing packages
+Port 51820/UDP accessible
+
+See Ubuntu Setup Instructions
+Windows Installation {#windows-installation}
 
 Clone this repository or download the script:
 git clone https://github.com/techconvergenceDev/WireGuard-VPN.git
@@ -64,8 +63,8 @@ Installs the WireGuard tunnel service
 QR Code Generation:
 
 Creates a local HTML file with your client configuration
-Generates a QR code using the QR Server API
-Opens the QR code in Microsoft Edge for easy scanning
+Generates a QR code using secure methods
+Opens the QR code for easy scanning
 
 
 Mobile Connection:
@@ -76,7 +75,7 @@ Connect with a single tap - no manual configuration needed
 
 
 Customization
-The script allows for customization of:
+Both scripts allow for customization of:
 
 Server and client IP addresses
 VPN subnet configuration
@@ -89,7 +88,7 @@ Advanced Configuration
 For advanced configuration options, see the Advanced Configuration Guide.
 Security Notes
 
-This script generates new keys for each setup, ensuring unique secure configurations
+These scripts generate new keys for each setup, ensuring unique secure configurations
 The server is configured to only accept connections from authorized clients
 All traffic between clients and the server is encrypted using WireGuard's modern cryptography
 
