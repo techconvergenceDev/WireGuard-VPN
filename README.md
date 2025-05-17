@@ -1,18 +1,18 @@
-WireGuard Easy VPN Setup
+WireGuard VPN Setup with QR Code Generator
 
 A PowerShell script that automatically sets up a WireGuard VPN server on Windows and generates a scannable QR code for easy mobile device connection.
 Features
 
 One-Click Server Setup: Fully automated WireGuard VPN server setup on Windows
-Auto QR Code Generation: Creates a scannable QR code without external websites
+Auto QR Code Generation: Creates a scannable QR code directly in your browser
 Mobile-Ready: Instantly connect Android or iOS devices by scanning the QR code
 Secure Configuration: Properly configured with best-practice security settings
-Zero Dependencies: No external dependencies beyond WireGuard itself
+Zero External Dependencies: No reliance on third-party websites for QR code generation
 User-Friendly: Simple and guided setup process with clear instructions
 
 Requirements
 
-Windows 10/11 or Windows Server 2016/2019/2022
+Windows 10/11 or Windows Server 2016/2019/2022/2025
 PowerShell 5.1 or newer (pre-installed on modern Windows systems)
 Administrator privileges
 Internet connection for downloading WireGuard (if not already installed)
@@ -40,7 +40,7 @@ git clone https://github.com/techconvergenceDev/WireGuard-VPN.git
 
 Run PowerShell as Administrator
 Navigate to the script directory:
-cd wireguard-easy-vpn
+cd WireGuard-VPN
 
 Set the execution policy to allow the script (if needed):
 Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
@@ -84,19 +84,9 @@ DNS servers
 Port forwarding (if needed)
 
 Troubleshooting
-QR Code Not Displaying
-If the QR code doesn't appear automatically:
-
-Click the "Show/Hide Configuration Text" button
-Copy the displayed configuration
-Use any QR code generator or the official WireGuard app's manual import option
-
-Connection Issues
-
-Ensure port 51820/UDP is forwarded on your router to your server
-Check that your firewall allows incoming connections on port 51820/UDP
-Verify the server's public IP address is correct in the configuration
-
+For detailed troubleshooting information, see the Troubleshooting Guide.
+Advanced Configuration
+For advanced configuration options, see the Advanced Configuration Guide.
 Security Notes
 
 This script generates new keys for each setup, ensuring unique secure configurations
@@ -111,4 +101,4 @@ Acknowledgments
 
 WireGuard - For creating an excellent VPN protocol
 QR Server API - For the QR code generation capability
-Sunil Kumar - Original script developer and maintainer (https://techconvergence.dev)
+Sunil Kumar - Original script developer and maintainer
