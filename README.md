@@ -12,7 +12,7 @@ Multi-Platform Support: Works on Windows 10/11, Windows Server, and Ubuntu Serve
 
 Platform Support
 Windows
-The wireguard-setup.ps1 script provides automated setup for Windows 10/11 and Windows Server environments.
+The wireguard-vpn.ps1 script provides automated setup for Windows 10/11 and Windows Server environments.
 Requirements:
 
 Windows 10/11 or Windows Server 2016/2019/2022
@@ -23,7 +23,7 @@ Port 51820/UDP accessible
 
 See Windows Setup Instructions
 Ubuntu
-The wireguard-ubuntu-setup.sh script provides automated setup for Ubuntu Server environments.
+The wireguard-vpn.sh script provides automated setup for Ubuntu Server environments.
 Requirements:
 
 Ubuntu Server 18.04 or newer
