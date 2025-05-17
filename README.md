@@ -36,7 +36,7 @@ Securely access your Plex, Jellyfin, or other media servers from anywhere.
 Installation
 
 Clone this repository or download the script:
-git clone https://github.com/yourusername/wireguard-easy-vpn.git
+git clone https://github.com/techconvergenceDev/WireGuard-VPN.git
 
 Run PowerShell as Administrator
 Navigate to the script directory:
